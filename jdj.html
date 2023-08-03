@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="count"></h1>
+    <button onclick="rs()">tang</button>
+    <script>
+        function increase() {
+            let count = 0;
+            return function () {
+                count++
+                document.getElementById("count").innerText = count;
+            }
+        }
+        let rs = increase();
+    </script>
+</body>
+
+</html>
